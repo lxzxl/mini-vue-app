@@ -5,10 +5,12 @@ import mutations from './mutations'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+export const config = {
   state: {
     comments: []
   },
   actions,
   mutations
-})
+}
+
+export default new Vuex.Store(config)

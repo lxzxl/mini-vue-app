@@ -2,10 +2,10 @@
   <div class="header">
     <div class="link">
       <router-link :to="{ name: 'PageInput'}">Input Page</router-link>
-      </div>
+    </div>
     <div class="link">
       <router-link :to="{ name: 'PageOutput'}">Output Page</router-link>
-      </div>
+    </div>
   </div>
 </template>
 

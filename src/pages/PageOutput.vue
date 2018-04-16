@@ -12,9 +12,6 @@ import { mapState } from 'vuex'
 
 export default {
   name: 'PageOutput',
-  data () {
-    return {}
-  },
   computed: {
     ...mapState({
       comments: state => state.comments
