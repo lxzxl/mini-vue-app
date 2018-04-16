@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import PageInput from '@/pages/PageInput'
+import PageOutput from '@/pages/PageOutput'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'PageInput',
+      component: PageInput
+    },
+    {
+      path: '/output',
+      name: 'PageOutput',
+      component: PageOutput
     }
   ]
 })
