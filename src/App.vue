@@ -27,13 +27,13 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   display: flex;
   flex-direction: column;
 }
 .container {
-  margin-top: 10px;
   flex-grow: 1;
+  max-width: 500px;
+  margin: 10px auto;
 }
 </style>

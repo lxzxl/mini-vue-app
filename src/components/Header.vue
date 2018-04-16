@@ -12,7 +12,7 @@
 <script>
 export default {
   name: 'Header',
-  data() {
+  data () {
     return {}
   }
 }
@@ -22,6 +22,7 @@ export default {
 .header {
   width: 100%;
   display: flex;
+  justify-content: center;
   background-color: aquamarine;
 }
 .link {

@@ -1,19 +1,31 @@
 <template>
   <div class="outputs">
-    PageOutput
+    <h3>All data in store:</h3>
+    <p v-for="comment in comments" :key="comment.uid">
+      <span class="name">{{comment.name}}</span>: {{comment.content}}
+    </p>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'PageOutput',
   data () {
     return {}
+  },
+  computed: {
+    ...mapState({
+      comments: state => state.comments
+    })
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.name {
+  font-weight: 600;
+  color: lightcoral;
+}
 </style>
