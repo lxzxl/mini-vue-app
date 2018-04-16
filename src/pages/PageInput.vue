@@ -2,7 +2,7 @@
   <div class="inputs">
     <label>Name: <input type="text" v-model="name"></label>
     <label>Content: <input type="text" v-model="content"></label>
-    <button @click="add">add</button>
+    <button @click="add">save</button>
     <p class="result">
       <span class="name">name: </span>{{name}}
       <br>
@@ -59,6 +59,7 @@ button {
 }
 .result {
   margin-top: 10px;
+  padding: 5px;
   border: 2px solid lightgray;
 }
 </style>
