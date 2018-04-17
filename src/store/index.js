@@ -13,4 +13,5 @@ export const config = {
   mutations
 }
 
+// FIXME: it's no safe to use config here, should use deepClone instead.
 export default new Vuex.Store(config)
